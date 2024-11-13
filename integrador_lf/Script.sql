@@ -84,12 +84,6 @@ CREATE TABLE pedidos (
 
 
 /****************************/
-CREATE TABLE recuerdos (
-    id_recuerdo INT PRIMARY KEY AUTO_INCREMENT,
-    image_path VARCHAR(255) NOT NULL,
-    fecha_alta TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
 
 show tables;
 drop table recuerdos;
