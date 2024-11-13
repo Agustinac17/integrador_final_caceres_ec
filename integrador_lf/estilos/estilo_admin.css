@@ -1,0 +1,196 @@
+/* Estilos generales */
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: rgb(114, 29, 23);
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+    z-index: 10;  /* Asegura que la barra lateral esté por encima del contenido */
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #b65656;
+}
+
+/* Contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    transition: margin-left 0.3s; /* Transición suave si cambian las opciones */
+}
+
+.content h1 {
+    font-size: 28px;
+}
+
+.section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #815b45;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #5ccf45;
+}
+
+/* Estilos generales para el main */
+main {
+    display: flex;
+    justify-content: flex-end;  /* Alinea el contenido al lado derecho */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor de las secciones dentro del main */
+section {
+    width: 45%;  /* Ajusta el tamaño de las secciones */
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Estilo para los encabezados */
+h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los formularios dentro de las secciones */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para los inputs y textarea */
+input[type="text"], textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para el botón */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para las novedades */
+.novedad {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.novedad h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.novedad .description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.novedad .fecha {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.novedad form {
+    margin-top: 15px;
+}
+
+/* Estilos para las imágenes de la sección "news_copadas" */
+.news_copadas img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative; /* Cambia de fixed a relative en pantallas pequeñas */
+    }
+
+    .content {
+        margin-left: 0;  /* El contenido ocupará todo el ancho en pantallas pequeñas */
+    }
+
+    section {
+        width: 90%;
+    }
+}
+
+/*************** novedades *******************/
+.imagen-pequena {
+    width: 150px; /* Ajusta el ancho según prefieras */
+    height: auto; /* Esto mantendrá la relación de aspecto */
+}
